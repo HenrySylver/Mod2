@@ -3,10 +3,13 @@ name: Build Spawn Only mod
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -29,5 +32,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: spawn-only-mod-jar
-          path: build/libs/*-remapped.jar
+          path: build/libs/spawn-only-1.0.0.jar
           if-no-files-found: error
