@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "spawnonly",
+  "version": "${version}",
+  "name": "Spawn Only",
+  "description": "Adds only the /spawn command to teleport players to the Overworld world spawn.",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.henrysylver.spawnonly.SpawnOnlyMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
